@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     "posts.apps.PostsConfig",  # new
     # 3rd party apps
     "rest_framework",
-    "corsheader",
+    "corsheaders",
 ]
 
 MIDDLEWARE = [
@@ -132,7 +132,7 @@ AUTH_USER_MODEL = "accounts.CustomUser"  # new
 
 REST_FRAMEWORK = {  # new
     "DEFAULT_PERMISSION_CLASSES": [
-        "rest_framework.permissions.AllowAny",
+        "rest_framework.permissions.IsAuthenticated",
     ],
 }
 

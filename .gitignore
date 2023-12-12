@@ -1,2 +1,5 @@
 blogapi-venv/
 superuser.txt
+.env
+db.sqlite3
+.DS_Store  #mac only
